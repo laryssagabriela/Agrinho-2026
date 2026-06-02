@@ -1,1 +1,135 @@
+Seu texto está correto para uma atividade que exige o CSS em arquivo separado.
 
+A estrutura mínima ficaria assim:
+
+**index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto Agrinho 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Projeto Agrinho 2026</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Início</h2>
+            <p>Conteúdo da página.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Agrinho</p>
+    </footer>
+
+</body>
+</html>
+```
+
+**style.css**
+
+```css
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #3cb371;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffff99;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Títulos */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+```
+
+Assim, o requisito de **não usar CSS dentro do HTML** é atendido, pois toda a estilização fica no arquivo **style.css** e o HTML contém apenas a referência:
+
+```html
+<link rel="stylesheet" href="style.css">
+```
