@@ -1,1 +1,64 @@
+/* Configuração geral */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+padding: 20px;
+}
+
+/* Título */
+h1{
+text-align: center;
+color: #2c7a2c;
+margin-bottom: 20px;
+}
+
+/* Área dos flashcards */
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+/* Cartões */
+.card{
+background-color: white;
+width: 250px;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+transition: transform 0.3s;
+}
+
+.card:hover{
+transform: scale(1.05);
+}
+
+.card h2{
+color: #2c7a2c;
+margin-bottom: 10px;
+}
+
+.card p{
+font-size: 15px;
+}
+
+/* Responsividade para celular */
+@media (max-width: 600px){
+.container{
+flex-direction: column;
+align-items: center;
+}
+
+.card{
+width: 90%;
+}
+}
 
